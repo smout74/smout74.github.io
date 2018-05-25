@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+<html>
+ <head>
+  <title>Aveva Bocad model</title>
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+   <script src="https://cdn.rawgit.com/tizzle/aframe-orbit-controls-component/v0.1.14/dist/aframe-orbit-controls-component.min.js"></script>
+   </head>
+ <body style=’margin : 0px; overflow: hidden;’>
+   <a-scene>    
 
-You can use the [editor on GitHub](https://github.com/smout74/smout74.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+      <a-entity
+          id="camera"
+          camera="fov: 80; zoom: 1;"
+          position="0 2 5"
+          orbit-controls="
+              autoRotate: false;
+              target: #target;
+              enableDamping: true;
+              dampingFactor: 0.125;
+              rotateSpeed:0.25;
+              minDistance:3;
+              maxDistance:100;
+              "
+          mouse-cursor="">
+      </a-entity>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/smout74/smout74.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+      <a-entity id="target">
+     <a-gltf-model src="url(xentrys.gltf)" position="-11.5 0 0" scale="0.001 0.001 0.001" rotation="-90 0 0" gltf-model="xentrys.gltf"></a-gltf-model>
+      </a-entity>
+      </a-scene>    
+ </body>
+</html>

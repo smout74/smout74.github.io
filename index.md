@@ -1,1 +1,1 @@
-Please check this <a href="https://smout74.github.io/bocad"> page </a>
+Please check this <a href="https://smout74.github.io/bocad.html"> page </a>

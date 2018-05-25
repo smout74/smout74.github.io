@@ -4,7 +4,7 @@
   <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
    <script src="https://cdn.rawgit.com/tizzle/aframe-orbit-controls-component/v0.1.14/dist/aframe-orbit-controls-component.min.js"></script>
    </head>
- <body style=’margin : 0px; overflow: hidden;’>
+ <body style=>
    <a-scene>    
 
       <a-entity

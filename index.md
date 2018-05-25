@@ -24,7 +24,7 @@
       </a-entity>
 
       <a-entity id="target">
-     <a-gltf-model src="url(xentrys.gltf)" position="-11.5 0 0" scale="0.001 0.001 0.001" rotation="-90 0 0" gltf-model="xentrys.gltf"></a-gltf-model>
+     <a-gltf-model src="url(Aveva-Bocad-VR/xentrys.gltf)" position="-11.5 0 0" scale="0.001 0.001 0.001" rotation="-90 0 0" gltf-model="Aveva-Bocad-VR/xentrys.gltf"></a-gltf-model>
       </a-entity>
       </a-scene>    
  </body>

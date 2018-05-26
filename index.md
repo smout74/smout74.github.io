@@ -2,4 +2,4 @@ Please check this <a href="https://smout74.github.io/model1.html">small Aveva Bo
 or
 a <a href="https://smout74.github.io/model2.html">bigger one</a>, then we also have a <a href="https://smout74.github.io/model3.html">floor</a> to walk in.
 
-Just a <a href="https://smout74.github.io/bocadar.html">test</a>.
+Just a <a href="https://smout74.github.io/Bocad_AR.html">test</a>.

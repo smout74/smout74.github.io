@@ -7,11 +7,11 @@
  <body style=’margin : 0px; overflow: hidden;’>
 <a-scene  embedded artoolkit='sourceType: webcam; ' antialias="true" outline>
   <a-assets>
-    <a-asset-item id="mymodel" src="model1.gltf"></a-asset-item>
+    <a-asset-item id="mymodel" src="model3.gltf"></a-asset-item>
   </a-assets>
   <a-marker  preset="hiro">
       <a-entity>
-        <a-entity position="-2 0 0" scale="0.0005 0.0005 0.0005" rotation="-90 0 0" gltf-model="#mymodel"></a-entity>
+        <a-entity position="-2 0 0" scale="0.001 0.001 0.001" rotation="-90 0 0" gltf-model="#mymodel"></a-entity>
       </a-entity>
   </a-marker>
   <a-entity camera></a-entity>

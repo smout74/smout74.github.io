@@ -7,6 +7,9 @@
  <body style=’margin : 0px; overflow: hidden;’>
 <a-scene  embedded artoolkit='sourceType: webcam; ' antialias="true" outline>
   <a-assets>
+    <img id="ground" src="ground.jpg">
+  </a-assets>
+  <a-assets>
     <a-asset-item id="mymodel" src="model_ar1.gltf"></a-asset-item>
   </a-assets>
   <a-marker preset="kanji">
@@ -16,6 +19,7 @@
      </a-entity>
     </a-entity>
  </a-marker>
+  <a-plane src="#ground" height="200" width="200" rotation="-90 0 0"></a-plane>
   <a-entity camera></a-entity>
 
  </body>

@@ -5,11 +5,21 @@
   <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
  </head>
  <body style=’margin : 0px; overflow: hidden;’>
-   <a-scene artoolkit>
-        <!-- define your scene as usual -->
-        <a-gltf-model src="url(model1.gltf)" position="-7.5 -23 0" scale="0.001 0.001 0.001" rotation="-90 0 0" gltf-model="model1.gltf"></a-gltf-model>
-        <!-- define a camera inside the <a-marker-camera> -->
-        <a-marker-camera preset='hiro'><a-marker-camera>
+   <a-scene  embedded arjs='trackingMethod: best;'>
+		<a-anchor hit-testing-enabled='true'>
+
+			<!-- Add your augmented reality here -->
+			<a-box position='0 0.5 0' material='opacity: 0.5; side:double; color:red;'>
+				<a-torus-knot radius='0.26' radius-tubular='0.05'>
+					<a-animation attribute="rotation" to="360 0 0" dur="5000" easing='linear' repeat="indefinite"></a-animation>
+				</a-torus-knot>
+			</a-box>
+
+		</a-anchor>
+
+		<!-- Define a static camera -->
+		<a-camera-static/>
+
    </a-scene>    
  </body>
 </html>

@@ -7,18 +7,12 @@
  <body style=’margin : 0px; overflow: hidden;’>
    <a-scene  embedded arjs='trackingMethod: best;'>
 		<a-anchor hit-testing-enabled='true'>
-
 			<!-- Add your augmented reality here -->
-
-  <a-assets>
-    <img id="liemar" src="reports-logo.jpg">
-  </a-assets>
-	        <a-plane src="#liemar" height="0.289" width="0.109" rotation"-90 0 0"></a-plane>
+                    <a-assets> <img id="liemar" src="reports-logo.jpg"> </a-assets>
+	            <a-plane src="#liemar" height="2.89" width="1.09" rotation"-90 0 0"></a-plane>
 		</a-anchor>
-
 		<!-- Define a static camera -->
 		<a-camera-static/>
-
    </a-scene>    
  </body>
 </html>

@@ -9,8 +9,11 @@
 		<a-anchor hit-testing-enabled='true'>
 
 			<!-- Add your augmented reality here -->
-
-	        <a-entity geometry="primitive: plane; height: 10; width: 10" material="side: double" src="reports-logo.png"></a-entity>
+<a-scene>
+  <a-assets>
+    <img id="liemar" src="reports-logo.png">
+  </a-assets>
+	        <a-plane src="#liemar" height="100" width="100"></a-plane>
 		</a-anchor>
 
 		<!-- Define a static camera -->

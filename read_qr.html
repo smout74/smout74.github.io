@@ -20,7 +20,7 @@
   reader.readAsDataURL(node.files[0]);
  }
 function myFunction() {
-    window.location.replace(reader.readAsDataURL(node.files[0]))
+    window.location.replace(reader.result)
 }
 function showQRIntro() {
   return confirm("Use your camera to take a picture of a QR code.");

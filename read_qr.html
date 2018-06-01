@@ -18,18 +18,12 @@
     qrcode.decode(reader.result);
   };
   reader.readAsDataURL(node.files[0]);
-  function myFunction() {
-       window.location.replace(reader.result)
  }
+}
 
-}
-function showQRIntro() {
-  return confirm("Use your camera to take a picture of a QR code.");
-}
  </script>
- <script src="./qr_packed.js">
-</script>
- <style>
+ <script src="./qr_packed.js"></script>
+<style>
  body, input {font-size:14pt}
 input, label {vertical-align:middle}
 .qrcode-text {padding-right:1.7em; margin-right:0}
@@ -49,12 +43,11 @@ img {
   width: 260px;
   object-fit: scale-down;
 }
- </style>
+</style>
   <img src="reports-logo.jpg" alt="Liemar" class="center">
   <input type=text size=16 placeholder="Tracking Code" class=qrcode-text>
    <label class=qrcode-text-btn>
   <input type=file accept="image/*" capture=environment onchange="openQRCamera(this);" tabindex=-1>
   </label> 
-  <input type=button value="Go" onclick="window.location.relocate="openQRCamera(this);">
- <p><button onclick="myFunction()">Go</button></p>
+  <input type=button value="Go" onclick="window.location.relocate=openQRCamera(this);">
 </html>

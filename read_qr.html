@@ -35,8 +35,14 @@ input, label {vertical-align:middle}
   width: device-width ;
   zoom: 1.0 ;
 }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
  </style>
-  <img src="Logo_Liemar.png" alt="Liemar">
+  <img src="Logo_Liemar.png" alt="Liemar" class="center">
   <input type=text size=16 placeholder="Tracking Code" class=qrcode-text>
    <label class=qrcode-text-btn>
   <input type=file accept="image/*" capture=environment onclick="return showQRIntro();" onchange="openQRCamera(this);" tabindex=-1>

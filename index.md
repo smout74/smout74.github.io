@@ -14,4 +14,4 @@ Just a <a href="https://smout74.github.io/Bocad_AR.html">test</a>. (only Chrome,
 
 <b>LiemarX Infomarker</b>
 
-<a href="https://smout74.github.io/qr_reader.html">Infotag</a>
+<a href="https://smout74.github.io/read_qr.html">Infotag</a>

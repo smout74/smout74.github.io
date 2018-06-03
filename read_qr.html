@@ -41,6 +41,11 @@
       padding-bottom: 10px;
       word-wrap: break-word;
     }
+    
+    #button div {
+      font-size: 20px;
+     
+    }
 
     #noQRFound {
       text-align: center;
@@ -55,8 +60,7 @@
   <div id="output" hidden>
     <div id="outputMessage">No QR code detected.</div>
     <div hidden><b>Data:</b> <span id="outputData"></span></div>
-   <!-- <input type=button value="Go" onclick="window.location=outputData.value;"> -->
-   <input type=button id="outputData" value="Go" onClick="self.location=outputData.innerText;">
+    <input type=button id="outputData" value="Go" onClick="self.location=outputData.innerText;">
   </div>
   <script>
     var video = document.createElement("video");

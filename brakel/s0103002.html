@@ -1,0 +1,21 @@
+<html>
+ <head>
+  <title>Aveva Bocad model</title>
+  <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+ </head>
+ <body style=’margin : 0px; overflow: hidden;’>
+   <a-scene vr-mode-ui="enabled: false">    
+  <a-assets>
+    <a-asset-item id="ass-obj" src="./shop_3002.obj"></a-asset-item>
+    <a-asset-item id="bocad-mtl" src="./bocad.mtl"></a-asset-item>
+  </a-assets>
+
+
+  
+      <a-entity camera look-controls>
+      </a-entity>
+        <a-entity id="target" obj-model="obj: #ass-obj; mtl: #bocad-mtl" position="0 0 0" scale="0.001 0.001 0.001" rotation="-90 0 0">
+      </a-entity>
+      </a-scene>    
+ </body>
+</html>

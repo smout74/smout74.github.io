@@ -6680,54 +6680,54 @@ ARjs.SessionDebugUI = function(arSession, tangoPointCloud){
 	//		current-tracking-backend
 	//////////////////////////////////////////////////////////////////////////////
 
-	var domElement = document.createElement('span')
-	domElement.style.display = 'block'
-	this.domElement.appendChild(domElement)
-	domElement.innerHTML = '<b>trackingBackend</b> : ' +trackingBackend
+// 	var domElement = document.createElement('span')
+// 	domElement.style.display = 'block'
+// 	this.domElement.appendChild(domElement)
+// 	domElement.innerHTML = '<b>trackingBackend</b> : ' +trackingBackend
 	
-	//////////////////////////////////////////////////////////////////////////////
-	//		augmented-websites
-	//////////////////////////////////////////////////////////////////////////////
+// 	//////////////////////////////////////////////////////////////////////////////
+// 	//		augmented-websites
+// 	//////////////////////////////////////////////////////////////////////////////
 
-	if( ARjs.SessionDebugUI.AugmentedWebsiteURL ){
-		var domElement = document.createElement('a')
-		domElement.innerHTML = 'Share on augmented-websites'
-		domElement.style.display = 'block'
-		// domElement.setAttribute('target', '_blank')
-		domElement.href = ARjs.SessionDebugUI.AugmentedWebsiteURL + '?'+location.href
-		this.domElement.appendChild(domElement)						
-	}
+// 	if( ARjs.SessionDebugUI.AugmentedWebsiteURL ){
+// 		var domElement = document.createElement('a')
+// 		domElement.innerHTML = 'Share on augmented-websites'
+// 		domElement.style.display = 'block'
+// 		// domElement.setAttribute('target', '_blank')
+// 		domElement.href = ARjs.SessionDebugUI.AugmentedWebsiteURL + '?'+location.href
+// 		this.domElement.appendChild(domElement)						
+// 	}
 
-	//////////////////////////////////////////////////////////////////////////////
-	//		toggle-point-cloud
-	//////////////////////////////////////////////////////////////////////////////
+// 	//////////////////////////////////////////////////////////////////////////////
+// 	//		toggle-point-cloud
+// 	//////////////////////////////////////////////////////////////////////////////
 
-	if( trackingBackend === 'tango' && tangoPointCloud ){
-		var domElement = document.createElement('button')
-		this.domElement.appendChild(domElement)
+// 	if( trackingBackend === 'tango' && tangoPointCloud ){
+// 		var domElement = document.createElement('button')
+// 		this.domElement.appendChild(domElement)
 
-		domElement.id= 'buttonTangoTogglePointCloud'
-		domElement.innerHTML = 'toggle-point-cloud'
-		domElement.href='javascript:void(0)'
+// 		domElement.id= 'buttonTangoTogglePointCloud'
+// 		domElement.innerHTML = 'toggle-point-cloud'
+// 		domElement.href='javascript:void(0)'
 
-		domElement.addEventListener('click', function(){
-			var scene = arSession.parameters.scene
-	// TODO how tangoPointCloud, get connected here ???
-	// in arguments simply ?
-			if( tangoPointCloud.object3d.parent ){
-				scene.remove(tangoPointCloud.object3d)
-			}else{
-				scene.add(tangoPointCloud.object3d)			
-			}
-		})
-	}
-}
+// 		domElement.addEventListener('click', function(){
+// 			var scene = arSession.parameters.scene
+// 	// TODO how tangoPointCloud, get connected here ???
+// 	// in arguments simply ?
+// 			if( tangoPointCloud.object3d.parent ){
+// 				scene.remove(tangoPointCloud.object3d)
+// 			}else{
+// 				scene.add(tangoPointCloud.object3d)			
+// 			}
+// 		})
+// 	}
+// }
 
-/**
- * Url of augmented-website service - if === '' then dont include augmented-website link
- * @type {String}
- */
-ARjs.SessionDebugUI.AugmentedWebsiteURL = 'https://webxr.io/augmented-website'
+// /**
+//  * Url of augmented-website service - if === '' then dont include augmented-website link
+//  * @type {String}
+//  */
+// ARjs.SessionDebugUI.AugmentedWebsiteURL = 'https://webxr.io/augmented-website'
 
 //////////////////////////////////////////////////////////////////////////////
 //		ARjs.AnchorDebugUI

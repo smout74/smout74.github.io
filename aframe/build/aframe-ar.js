@@ -6772,7 +6772,7 @@ ARjs.AnchorDebugUI = function(arAnchor){
 	var domElement = document.createElement('span')
 	domElement.style.display = 'block'
 	this.domElement.appendChild(domElement)
-	domElement.innerHTML = ' '
+	//domElement.innerHTML = '<b>markersAreaEnabled</b> :' +arAnchor.parameters.markersAreaEnabled
 
 	//////////////////////////////////////////////////////////////////////////////
 	//		toggle-marker-helper

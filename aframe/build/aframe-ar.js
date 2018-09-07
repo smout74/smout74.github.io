@@ -6772,26 +6772,26 @@ ARjs.AnchorDebugUI = function(arAnchor){
 	var domElement = document.createElement('span')
 	domElement.style.display = 'block'
 	this.domElement.appendChild(domElement)
-	domElement.innerHTML = '<b>markersAreaEnabled</b> :' +arAnchor.parameters.markersAreaEnabled
+	domElement.innerHTML = ' '
 
 	//////////////////////////////////////////////////////////////////////////////
 	//		toggle-marker-helper
 	//////////////////////////////////////////////////////////////////////////////
 
 	if( arAnchor.parameters.markersAreaEnabled ){
-		// var domElement = document.createElement('button')
-		// domElement.style.display = 'block'
-		// this.domElement.appendChild(domElement)
+		var domElement = document.createElement('button')
+		domElement.style.display = 'block'
+		this.domElement.appendChild(domElement)
 
-		// domElement.id= 'buttonToggleMarkerHelpers'
-		// domElement.innerHTML = 'toggle-marker-helper'
-		// domElement.href='javascript:void(0)'
+		domElement.id= 'buttonToggleMarkerHelpers'
+		domElement.innerHTML = 'toggle-marker-helper'
+		domElement.href='javascript:void(0)'
 
-		// var subMarkerHelpersVisible = false
-		// domElement.addEventListener('click', function(){
-		// 	subMarkerHelpersVisible = subMarkerHelpersVisible ? false : true
-		// 	arAnchor.markersArea.setSubMarkersVisibility(subMarkerHelpersVisible)		
-		// })
+		var subMarkerHelpersVisible = false
+		domElement.addEventListener('click', function(){
+			subMarkerHelpersVisible = subMarkerHelpersVisible ? false : true
+			arAnchor.markersArea.setSubMarkersVisibility(subMarkerHelpersVisible)		
+		})
 	}
 	
 	//////////////////////////////////////////////////////////////////////////////
